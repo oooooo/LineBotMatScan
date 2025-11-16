@@ -4,6 +4,9 @@ app = Flask(__name__)  # 建立 Flask app
 
 
 # GET in 網站根目錄 執行 home 函式
+# @app.route(...) = 幫下面 function 加上 URL（網址）功能
+# Flask 用 ＠ (decorator) 來處理 route: 替某個網址綁定一個處理函式
+# 自己寫：app.add_url_rule('/', view_func=home, methods=['GET'])
 @app.route("/", methods=["GET"])
 def home():
     return "Server is running!"
