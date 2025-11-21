@@ -1,0 +1,8 @@
+flask
+python-dotenv
+line-bot-sdk
+google-generativeai
+Pillow
+git+https://github.com/openai/whisper.git
+torch
+numpy<2
